@@ -1,0 +1,15 @@
+/* Media queries styles here */
+
+/* Ensure font-family is applied if necessary */
+body {
+  font-family: "Noto Serif Display", serif;
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+}
