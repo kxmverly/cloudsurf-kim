@@ -1,7 +1,6 @@
 // src/App.js
 import React from "react";
-import profilePic from "./assets/about-pic2.png";
-import profilePicb from "./assets/about-pic3.png";
+import profilePic from "./assets/about-pic3.png";
 import experienceIcon from "./assets/experience.png";
 import emailIcon from "./assets/email.png";
 import linkedinIcon from "./assets/linkedin.png";
@@ -74,15 +73,7 @@ function App() {
         </div>
       </nav>
       <section id="profile">
-        <div className="section__pic-container">
-          <img
-            src={profilePicb}
-            alt="Kimberly Boyle profile picture"
-            className="profile-pic"
-          />
-        </div>
         <div className="section__text">
-          <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title">Kimberly Boyle</h1>
           <p className="section__text__p2">Front-End Developer</p>
           <div className="btn-container">
@@ -173,6 +164,29 @@ function App() {
           <a href="#experience">
             <img src={arrowIcon} alt="Arrow Icon" className="icon-arrow" />
           </a>
+        </div>
+      </section>
+      <section id="education">
+        <p className="section__text__p1">Explore My</p>
+        <h1 className="title">Education</h1>
+        <div className="education-details-container">
+          <h2 className="experience-sub-title">
+            High School and Higher Education
+          </h2>
+          <p>
+            I attended Northwest Career and Technical Academy from 2016 to 2020,
+            where I was actively involved in Health Occupations Students of
+            America (HOSA), focusing on health and medical science education.
+            Following high school, I pursued a degree in Business and
+            Information Systems at the University of Nevada, Las Vegas (UNLV),
+            from 2020 to 2025. During my time at UNLV, I was a member of Alpha
+            Xi Delta sorority from 2021 to 2023, participating in leadership,
+            community service, and networking events. Additionally, I have been
+            a member of the UNLV Management Information System Society since
+            2024, engaging in activities that enhance my knowledge of
+            information systems and allow me to network with professionals in
+            the field.
+          </p>
         </div>
       </section>
       <section id="experience">

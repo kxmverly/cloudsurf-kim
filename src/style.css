@@ -1,6 +1,7 @@
 /* GENERAL */
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
 * {
   margin: 0;
@@ -9,8 +10,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-image: url("assets/pexels-codioful-7130497.jpg");
+  background-image: url("assets/photo-1604077350837-c7f82f28653f\ \(1\).jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -37,6 +37,8 @@ nav {
   font-weight: bold;
   margin-right: auto; /* Push the .logo to the left */
   margin-left: 2rem; /* Add margin to the left of the .logo */
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
 }
 
 .nav-links {
@@ -52,10 +54,11 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: black;
+  font-family: "DM Sans", sans-serif;
 }
 
 .nav-links a:hover {
-  color: rgb(149, 188, 202);
+  color: white;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: rgb(149, 188, 202);
@@ -140,7 +143,7 @@ nav {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 14vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -176,18 +179,24 @@ section {
 }
 
 .section__text__p1 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
+  font-family: "DM Sans", sans-serif;
+  font-weight: light;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 0.5rem;
+  font-family: "DM Serif Display", serif;
+  font-style: italic;
 }
 
 .section__text__p2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
+  font-family: "DM Serif Display", serif;
+  color: rgb(0, 0, 0);
 }
 
 #socials-container {
@@ -216,7 +225,6 @@ section {
 }
 
 /* BUTTONS */
-
 .btn-container {
   display: flex;
   justify-content: center;
@@ -229,37 +237,21 @@ section {
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  font-family: "DM Sans", sans-serif;
 }
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid; /* Initial darker border */
+  background: transparent; /* Set the background to transparent */
 }
 
-.btn-color-1:hover .btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
+.btn-color-1:hover,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: rgb(211, 27, 131);
   color: white;
-}
-
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
-  background: none;
-}
-
-.bth.color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
-}
-
-.btn-container {
-  gap: 1rem;
+  cursor: pointer;
+  border: rgb(255, 255, 255) 0.1rem solid; /* White border on hover */
 }
 
 /* ABOUT SECTION*/
@@ -289,6 +281,8 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  border: 0.1rem solid; /* Fixed spacing */
+  border-color: black; /* This will override the border color */
 }
 
 .arrow {
@@ -300,10 +294,9 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
   border-radius: 2rem;
   border: 0.1rem solid; /* Fixed spacing */
-  border-color: rgb(163, 163, 163); /* This will override the border color */
+  border-color: black; /* This will override the border color */
   text-align: center;
 }
 
@@ -329,9 +322,10 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(53, 53, 53);
-  font-weight: 600;
+  color: black;
+  font-weight: 400;
   font-size: 1.75rem;
+  font-family: "DM Sans", sans-serif;
   margin-bottom: 2rem;
 }
 
@@ -364,7 +358,7 @@ article.icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
+/* CONTACT SECTION */
 
 #contact {
   display: flex;
@@ -382,3 +376,5 @@ article.icon {
   margin: 2rem auto;
   padding: 2rem;
 }
+
+/* EDUCATION */
