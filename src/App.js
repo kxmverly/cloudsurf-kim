@@ -1,5 +1,4 @@
-// src/App.js
-import React from "react";
+import React, { useState } from "react";
 import profilePic from "./assets/about-pic3.png";
 import experienceIcon from "./assets/experience.png";
 import emailIcon from "./assets/email.png";
@@ -11,9 +10,12 @@ import resume from "./assets/kimsresume.pdf";
 import "./style.css";
 
 function App() {
+  // State to manage the visibility of the hamburger menu
+  const [isMenuActive, setIsMenuActive] = useState(false);
+
   const toggleMenu = () => {
-    const menuLinks = document.querySelector(".menu-links");
-    menuLinks.classList.toggle("active");
+    // Toggle the state to show or hide the menu
+    setIsMenuActive(!isMenuActive);
   };
 
   return (
@@ -43,7 +45,7 @@ function App() {
             <span></span>
             <span></span>
           </div>
-          <ul className="menu-links">
+          <ul className={`menu-links ${isMenuActive ? "active" : ""}`}>
             <li>
               <a href="#about" onClick={toggleMenu}>
                 About
@@ -334,3 +336,4 @@ function App() {
 }
 
 export default App;
+/* random change */

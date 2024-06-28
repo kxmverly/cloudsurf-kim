@@ -5,11 +5,12 @@ body {
   font-family: "Noto Serif Display", serif;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 768px) {
   #desktop-nav {
     display: none;
   }
   #hamburger-nav {
-    display: flex;
+    display: block;
   }
 }
+/*random change 2, hello world */
