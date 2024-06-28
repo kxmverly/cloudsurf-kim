@@ -123,11 +123,6 @@ function App() {
           <div className="about-details-container">
             <div className="about-containers">
               <div className="details-container">
-                <img
-                  src={experienceIcon}
-                  alt="Experience icon"
-                  className="icon"
-                />
                 <h3>Experience</h3>
                 <p>
                   1+ Months
